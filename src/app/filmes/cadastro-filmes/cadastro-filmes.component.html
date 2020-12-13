@@ -5,36 +5,31 @@
       <mat-card-content>
 
         <mat-form-field class="full-width">
-          <input
-            matInput
-            placeholder="Título"
-            name="titulo"
-            formControlName="titulo"
-          />
+          <input  matInput placeholder="Título *" name="titulo" formControlName="titulo" />
+
+          <mat-error *ngIf="validacao.hasErrorValidar(f.titulo, 'required')">Campo Obrigatório *</mat-error>
+          <mat-error *ngIf="validacao.hasErrorValidar(f.titulo, 'minlength')">Mínimo 2 Caracteres *</mat-error>
+          <mat-error *ngIf="validacao.hasErrorValidar(f.titulo, 'maxlength')">Máximo 128 Caracteres *</mat-error>
         </mat-form-field>
 
         <mat-form-field class="full-width">
-          <input
-            matInput
-            placeholder="Link Foto"
-            name="urlFoto"
-            formControlName="urlFoto"
-          />
+          <input matInput placeholder="Link Foto" name="urlFoto" formControlName="urlFoto" />
+
+          <mat-error *ngIf="validacao.hasErrorValidar(f.urlFoto, 'minlength')">Mínimo 10 Caracteres *</mat-error>
         </mat-form-field>
 
         <mat-form-field class="full-width">
-          <input
-            matInput
-            [matDatepicker]="picker"
-            placeholder="Data de Lançamento"
-            name="dtLancamento"
-            formControlName="dtLancamento"
-          />
+          <input matInput readonLy [matDatepicker]="picker" placeholder="Data de Lançamento *" name="dtLancamento" formControlName="dtLancamento"
+                 (click)="picker.open()" />
+
           <mat-datepicker-toggle
             matSuffix
-            [for]="picker"
-          ></mat-datepicker-toggle>
+            [for]="picker">
+          </mat-datepicker-toggle>
+
           <mat-datepicker #picker></mat-datepicker>
+
+          <mat-error *ngIf="validacao.hasErrorValidar(f.dtLancamento, 'required')">Campo Obrigatório *</mat-error>
         </mat-form-field>
 
         <mat-form-field class="full-width">
@@ -44,6 +39,11 @@
             name="descricao"
             formControlName="descricao"
           ></textarea>
+
+          <mat-error  *ngIf="validacao.hasErrorValidar(f.descricao, 'required')">Campo Obrigatório *</mat-error>
+          <mat-error *ngIf="validacao.hasErrorValidar(f.descricao, 'minlength')">Mínimo 10 Caracteres *</mat-error>
+          <mat-error *ngIf="validacao.hasErrorValidar(f.descricao, 'maxlength')">Máximo 256 Caracteres *</mat-error>
+
         </mat-form-field>
 
         <mat-form-field class="full-width">
@@ -57,6 +57,10 @@
             name="nota"
             formControlName="nota"
           />
+
+          <mat-error *ngIf="validacao.hasErrorValidar(f.nota, 'required')">Campo Obrigatório *</mat-error>
+          <mat-error *ngIf="validacao.hasErrorValidar(f.nota, 'min')">Nota Mínima 0 *</mat-error>
+          <mat-error *ngIf="validacao.hasErrorValidar(f.nota, 'max')">Nota Máxima 10 *</mat-error>
         </mat-form-field>
 
         <mat-form-field class="full-width">
@@ -66,19 +70,22 @@
             name="urlIMDb"
             formControlName="urlIMDb"
           />
+
+          <mat-error *ngIf="validacao.hasErrorValidar(f.urlIMDb, 'minlength')">Mínimo 10 Caracteres *</mat-error>
         </mat-form-field>
 
         <mat-form-field class="full-width">
-          <mat-select placeholder="Gênero" formControlName="genero">
 
+          <mat-select placeholder="Gênero *" formControlName="genero">
             <mat-option value="Comédia">Comédia</mat-option>
             <mat-option value="Aventura">Aventura</mat-option>
             <mat-option value=">Ficção Científica">Ficção Científica</mat-option>
             <mat-option value="Romance">Romance</mat-option>
             <mat-option value="Terror">Terror</mat-option>
             <mat-option value="Ação">Ação</mat-option>
-
           </mat-select>
+
+
         </mat-form-field>
 
       </mat-card-content>
