@@ -10,7 +10,14 @@
            [formControlName]="controlName"
     />
     <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">Campo Obrigatório *</mat-error>
-    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'min')">Nota Mínima 0 *</mat-error>
-    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'max')">Nota Máxima 10 *</mat-error>
+
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'min')">
+                Nota Mínima {{validacao.lengthValidar(formControl, 'min')}} *
+    </mat-error>
+
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'max')">
+                Nota Máxima {{validacao.lengthValidar(formControl, 'max')}} *
+    </mat-error>
+
   </mat-form-field>
 </div>

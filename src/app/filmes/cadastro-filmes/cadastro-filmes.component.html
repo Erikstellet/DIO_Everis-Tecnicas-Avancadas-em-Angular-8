@@ -2,7 +2,8 @@
 
 <div class="main-div">
   <mat-card class="center width50">
-      <form [formGroup]="cadastro" (ngSubmit)="salvar()" (ngReset)="reiniciarForm()">
+      <form autocomplete="off" novalidate [formGroup]="cadastro"
+            (ngSubmit)="salvar()" (ngReset)="reiniciarForm()">
 
             <mat-card-content>
                   <dio-input-text titulo="Título *" controlName="titulo"
@@ -29,8 +30,8 @@
                                   [formGroup]="cadastro">
                   </dio-input-text>
 
-                  <dio-input-select titulo="Gênero *" controlName="genero"
-                                    [formGroup]="cadastro">
+                  <dio-input-select titulo="Gênero *" [opcoes]="generos"
+                                    controlName="genero" [formGroup]="cadastro">
                   </dio-input-select>
             </mat-card-content>
 
