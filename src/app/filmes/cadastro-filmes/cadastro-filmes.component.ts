@@ -12,10 +12,7 @@ export class CadastroFilmesComponent implements OnInit
 {
   cadastro: FormGroup;
 
-  constructor(public validacao:  ValidarCamposService, private fb: FormBuilder)
-  {
-
-  }
+  constructor(public validacao:  ValidarCamposService, private fb: FormBuilder) { }
 
   ngOnInit(): void
   {
@@ -25,7 +22,7 @@ export class CadastroFilmesComponent implements OnInit
         urlFoto: ['', [Validators.minLength(10)]],
         dtLancamento: ['', [Validators.required]],
         descricao: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(256)]],
-        nota: [0,[Validators.min(0), Validators.max(10)]],
+        nota: [0,[Validators.required, Validators.min(0), Validators.max(10)]],
         urlIMDb: ['', [Validators.minLength(10)]],
         genero: ['', [Validators.required]]
     });
