@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { FilmesService } from 'src/app/core/filmes.service';
+import { AlertaComponent } from 'src/app/shared/components/alerta/alerta.component';
 import { ValidarCamposService } from 'src/app/shared/components/campos/validar-campos.service';
+import { Filme } from 'src/app/shared/models/filme';
 
 @Component
 ({
@@ -13,7 +17,18 @@ export class CadastroFilmesComponent implements OnInit
   cadastro: FormGroup;
   generos: Array<string>;
 
-  constructor(public validacao:  ValidarCamposService, private fb: FormBuilder) { }
+  constructor
+  (
+    public dialog: MatDialog,
+    public validacao:  ValidarCamposService,
+    private fb: FormBuilder,
+    private filmeService: FilmesService,
+  ) { }
+
+  get f()
+  {
+    return this.cadastro.controls;
+  }
 
   ngOnInit(): void
   {
@@ -28,18 +43,10 @@ export class CadastroFilmesComponent implements OnInit
         genero: ['', [Validators.required]]
     });
 
-    this.generos =
-    [
-      'Ação',
-      'Aventura',
-      'Comédia',
-      'Ficção Científica',
-      'Romance',
-      'Terror'
-    ];
+    this.generos = [ 'Ação', 'Aventura', 'Comédia', 'Ficção Científica', 'Romance', 'Terror' ];
   }
 
-  salvar(): void
+  submit(): void
   {
     this.cadastro.markAllAsTouched();
 
@@ -48,7 +55,8 @@ export class CadastroFilmesComponent implements OnInit
       return;
     }
 
-    alert('Sucesso! /n' + JSON.stringify(this.cadastro.value, null, 4));
+    const filme = this.cadastro.getRawValue() as Filme;
+    this.salvar(filme);
   }
 
   reiniciarForm(): void
@@ -56,8 +64,15 @@ export class CadastroFilmesComponent implements OnInit
     this.cadastro.reset();
   }
 
-  get f()
+  private salvar(filme: Filme): void
   {
-    return this.cadastro.controls;
+    this.filmeService.salvar(filme).subscribe(() =>
+    {
+      const dialogRef = this.dialog.open(AlertaComponent);
+    },
+    () =>
+    {
+      alert('Erro ao Salvar! ')
+    });
   }
 }
