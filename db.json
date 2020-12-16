@@ -109,6 +109,26 @@
       "urlIMDb": "https://www.imdb.com/title/tt4154756/?ref_=nv_sr_srsg_0",
       "genero": "Ação",
       "id": 11
+    },
+    {
+      "titulo": "Batman: O Cavaleiro das Trevas Ressurge",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2012-07-27T03:00:00.000Z",
+      "descricao": "Oito anos depois da anarquia do Coringa, Batman com ajuda da Mulher Gato, tentam salvar Gotham do terrorista Bane.",
+      "nota": 8.4,
+      "urlIMDb": "https://www.imdb.com/title/tt1345836/?ref_=hm_tpks_tt_17_pd_tp1_t1",
+      "genero": "Ação",
+      "id": 12
+    },
+    {
+      "titulo": "O Senhor dos Anéis: As Duas Torres",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2002-12-27T02:00:00.000Z",
+      "descricao": "Enquanto Frodo e Sam estão perto de Mordor com a ajuda de Gollum, a divida comunhão luta contra Saruman e os Isengards.",
+      "nota": 8.7,
+      "urlIMDb": "https://www.imdb.com/title/tt0167261/?ref_=hm_tpks_tt_30_pd_tp1_t1",
+      "genero": "Aventura",
+      "id": 13
     }
   ]
 }

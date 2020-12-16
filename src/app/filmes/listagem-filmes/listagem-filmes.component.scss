@@ -11,9 +11,19 @@
   }
 }
 
+.filtro-listagem
+{
+  width: calc(100% - 50px);
+}
+
 .mat-card-image
 {
   display: block;
+}
+
+.padding10
+{
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 525px)
