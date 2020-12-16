@@ -93,7 +93,7 @@
     {
       "id": 10,
       "titulo": "Iron Man",
-      "urlFoto": "",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2008-04-30T03:00:00.000Z",
       "descricao": "Tony Stark é um industrial bilionário e inventor brilhante que realiza testes bélicos no exterior, mas é sequestrado por terroristas que o forçam a construir uma arma devastadora. Em vez disso, ele constrói uma armadura blindada e enfrenta seus sequestradores.",
       "nota": "7.9",
@@ -101,174 +101,14 @@
       "genero": "Aventura"
     },
     {
-      "titulo": "const dialogRef = this.dialog.open(AlertaComponent);vvv",
-      "urlFoto": "const dialogRef = this.dialog.open(AlertaComponent);",
-      "dtLancamento": "2020-12-04T03:00:00.000Z",
-      "descricao": "const dialogRef = this.dialog.open(AlertaComponent);",
-      "nota": 0,
-      "urlIMDb": "const dialogRef = this.dialog.open(AlertaComponent);",
-      "genero": "Terror",
+      "titulo": "Vingadores: Guerra Infinita",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2018-04-26T03:00:00.000Z",
+      "descricao": "Os Vingadores e seus aliados deverão sacrificar tudo em uma tentativa de derrotar o poderoso Thanos antes que sua explosão de devastação ponha fim ao universo.",
+      "nota": 8.4,
+      "urlIMDb": "https://www.imdb.com/title/tt4154756/?ref_=nv_sr_srsg_0",
+      "genero": "Ação",
       "id": 11
-    },
-    {
-      "titulo": "color=\"accent\"color=\"accent\"color=\"accent\"",
-      "urlFoto": "color=\"accent\"color=\"accent\"color=\"accent\"",
-      "dtLancamento": "2020-12-04T03:00:00.000Z",
-      "descricao": "color=\"accent\"color=\"accent\"color=\"accent\"",
-      "nota": 0,
-      "urlIMDb": "color=\"accent\"color=\"accent\"color=\"accent\"",
-      "genero": "Terror",
-      "id": 12
-    },
-    {
-      "titulo": "color=\"accent\" ",
-      "urlFoto": "color=\"accent\" ",
-      "dtLancamento": "2020-12-05T03:00:00.000Z",
-      "descricao": "color=\"accent\" ",
-      "nota": 0,
-      "urlIMDb": "color=\"accent\" ",
-      "genero": "Terror",
-      "id": 13
-    },
-    {
-      "titulo": "cdkFocusInitialcdkFocusInitialcdkFocusInitial",
-      "urlFoto": "vcdkFocusInitialcdkFocusInitial",
-      "dtLancamento": "2020-12-04T03:00:00.000Z",
-      "descricao": "cdkFocusInitialcdkFocusInitialcdkFocusInitial",
-      "nota": 0,
-      "urlIMDb": "cdkFocusInitialcdkFocusInitialcdkFocusInitial",
-      "genero": "Terror",
-      "id": 14
-    },
-    {
-      "titulo": "possuirBtnFechar",
-      "urlFoto": "possuirBtnFechar",
-      "dtLancamento": "2020-12-01T03:00:00.000Z",
-      "descricao": "possuirBtnFechar",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 15
-    },
-    {
-      "titulo": "possuirBtnFechar",
-      "urlFoto": "possuirBtnFechar",
-      "dtLancamento": "2020-12-02T03:00:00.000Z",
-      "descricao": "possuirBtnFechar",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 16
-    },
-    {
-      "titulo": "dialogRefdialogRefdialogRef",
-      "urlFoto": "dialogRefdialogRefdialogRef",
-      "dtLancamento": "2020-12-02T03:00:00.000Z",
-      "descricao": "dialogRefdialogRefdialogRef",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 17
-    },
-    {
-      "titulo": "Ir a listagem",
-      "urlFoto": "Ir a listagem",
-      "dtLancamento": "2020-12-02T03:00:00.000Z",
-      "descricao": "Ir a listagem",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 18
-    },
-    {
-      "titulo": "Ir a listagem",
-      "urlFoto": "Ir a listagem",
-      "dtLancamento": "2020-12-02T03:00:00.000Z",
-      "descricao": "Ir a listagem",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 19
-    },
-    {
-      "titulo": ": \"primary\",: \"primary\",: \"primary\",",
-      "urlFoto": ": \"primary\",: \"primary\",: \"primary\",",
-      "dtLancamento": "2020-12-02T03:00:00.000Z",
-      "descricao": ": \"primary\",: \"primary\",: \"primary\",",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 20
-    },
-    {
-      "titulo": "SucessoSucessoSucesso",
-      "urlFoto": "SucessoSucessoSucessoSucesso",
-      "dtLancamento": "2020-12-01T03:00:00.000Z",
-      "descricao": "SucessoSucessoSucessoSucesso",
-      "nota": 0,
-      "urlIMDb": "SucessoSucessoSucesso",
-      "genero": "Terror",
-      "id": 21
-    },
-    {
-      "titulo": "SucessoSucessoSucesso",
-      "urlFoto": "SucessoSucessoSucessoSucesso",
-      "dtLancamento": "2020-12-01T03:00:00.000Z",
-      "descricao": "SucessoSucessoSucessoSucesso",
-      "nota": 0,
-      "urlIMDb": "SucessoSucessoSucesso",
-      "genero": "Terror",
-      "id": 22
-    },
-    {
-      "titulo": "corBtnSucesso: 'accent',corBtnSucesso: 'accent',corBtnSucesso: 'accent',",
-      "urlFoto": "corBtnSucesso: 'accent',corBtnSucesso: 'accent',corBtnSucesso: 'accent',",
-      "dtLancamento": "2020-12-01T03:00:00.000Z",
-      "descricao": "corBtnSucesso: 'accent',corBtnSucesso: 'accent',corBtnSucesso: 'accent',",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 23
-    },
-    {
-      "titulo": "vvvvvvvvcorBtnSucesso: 'accent',",
-      "urlFoto": "corBtnSucesso: 'accent',",
-      "dtLancamento": "2020-12-01T03:00:00.000Z",
-      "descricao": "corBtnSucesso: 'accent',corBtnSucesso: 'accent',",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 24
-    },
-    {
-      "titulo": "CancelarCancelarCancelar",
-      "urlFoto": "CancelarCancelarCancelar",
-      "dtLancamento": "2020-12-01T03:00:00.000Z",
-      "descricao": "CancelarCancelarCancelar",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 25
-    },
-    {
-      "titulo": "CancelarCancelarCancelarCancelar",
-      "urlFoto": "CancelarCancelarCancelarCancelar",
-      "dtLancamento": "2020-12-01T03:00:00.000Z",
-      "descricao": "vvvCancelarCancelarCancelar",
-      "nota": 0,
-      "urlIMDb": "CancelarCancelarCancelar",
-      "genero": "Terror",
-      "id": 26
-    },
-    {
-      "titulo": "CancelarCancelarCancelarCancelarCancelarCancelar",
-      "urlFoto": "CancelarCancelarCancelarCancelarCancelarCancelar",
-      "dtLancamento": "2020-12-01T03:00:00.000Z",
-      "descricao": "CancelarCancelarCancelarCancelar",
-      "nota": 0,
-      "urlIMDb": "CancelarCancelarCancelarCancelar",
-      "genero": "Romance",
-      "id": 27
     }
   ]
 }
