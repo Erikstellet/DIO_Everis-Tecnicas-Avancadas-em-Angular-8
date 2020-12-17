@@ -1,0 +1,28 @@
+.mat-card-image
+{
+  width: 282px;
+  height: 380px;
+  margin: auto;
+  padding: 30px;
+  display: block;
+}
+
+.title
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.moldura-foto
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  size: 20%;
+  background: rgb(18, 179, 204);
+}
+
