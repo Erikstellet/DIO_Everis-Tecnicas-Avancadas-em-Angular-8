@@ -65,3 +65,4 @@ export class VisualizarFilmesComponent implements OnInit
                       .subscribe((filme: Filme) => this.filme = filme);
   }
 }
+
