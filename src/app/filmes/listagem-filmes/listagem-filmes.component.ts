@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { debounceTime } from 'rxjs/operators';
 import { FilmesService } from 'src/app/core/filmes.service';
+import { ConfigParams } from 'src/app/shared/models/config-params';
 import { Filme } from 'src/app/shared/models/filme';
+
 
 @Component
 ({
@@ -9,13 +12,15 @@ import { Filme } from 'src/app/shared/models/filme';
   templateUrl: './listagem-filmes.component.html',
   styleUrls: ['./listagem-filmes.component.scss']
 })
-export class ListagemFilmesComponent implements OnInit {
+export class ListagemFilmesComponent implements OnInit
+{
+  readonly semFoto = "https://cutt.ly/KhKtsdK";
 
-  readonly qtdPagina = 5;
-
-  texto: string;
-  genero: string;
-  pagina = 0;
+  config: ConfigParams =
+  {
+    pagina: 0,
+    limite: 5
+  }
 
   filmes: Filme[] = [];
   filtrosListagem: FormGroup;
@@ -37,15 +42,17 @@ export class ListagemFilmesComponent implements OnInit {
       }
     );
 
-    this.filtrosListagem.get('texto').valueChanges.subscribe((val: string) =>
+    this.filtrosListagem.get('texto').valueChanges
+                        .pipe(debounceTime(600))
+                        .subscribe((val: string) =>
     {
-      this.texto = val;
+      this.config.pesquisa = val;
       this.resetarConsulta()
     })
 
     this.filtrosListagem.get('genero').valueChanges.subscribe((val: string) =>
     {
-      this.genero = val;
+      this.config.campo ={ tipo: 'genero', valor: val};
       this.resetarConsulta()
     })
 
@@ -61,14 +68,14 @@ export class ListagemFilmesComponent implements OnInit {
 
   private listarFilmes(): void
   {
-    this.pagina++;
-    this.filmesService.listar(this.pagina, this.qtdPagina, this.texto, this.genero)
+    this.config.pagina++;
+    this.filmesService.listar(this.config)
                       .subscribe((filmes: Filme[]) => this.filmes.push(...filmes));
   }
 
   private resetarConsulta(): void
   {
-    this.pagina = 0;
+    this.config.pagina = 0;
     this.filmes = [];
 
     this.listarFilmes();
